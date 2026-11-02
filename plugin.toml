@@ -1,0 +1,22 @@
+id = "my-tools/cursor-size"
+name = "Cursor Size"
+version = "1.0.0"
+plugin_api = 24
+author = "my-tools"
+license = "MIT"
+icon = "mouse"
+description = "Applies a larger mouse cursor size at startup and on demand, without touching the cursor theme."
+tags = ["cursor", "accessibility", "mouse"]
+
+[[setting]]
+key = "size"
+type = "int"
+label_key = "settings.size.label"
+description_key = "settings.size.description"
+default = 48
+min = 16
+max = 128
+
+[[service]]
+id = "service"
+entry = "service.luau"
